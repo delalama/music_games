@@ -1,0 +1,58 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Music Games - Solfeo</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            width: min(1240px, 100% - 24px);
+            margin: 0 auto;
+            padding: 12px;
+        }
+
+        .page-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            margin: 8px 0 14px;
+        }
+
+        .page-header h1 {
+            margin: 0;
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        .page-header small {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body data-theme="light" data-current-section="solfeo">
+    <main class="container">
+        <div class="page-header">
+            <h1>Juegos de Solfeo</h1>
+            <small>Deploy autónomo para Render</small>
+        </div>
+
+        <div id="solfeoApp" class="solfeo-app">
+            <div class="solfeo-hub">
+                <aside id="solfeoExerciseList" class="solfeo-ex-list"></aside>
+                <section id="solfeoExerciseHost" class="solfeo-ex-host"></section>
+            </div>
+        </div>
+    </main>
+
+    <script src="/static/solfeo.js"></script>
+</body>
+</html>
